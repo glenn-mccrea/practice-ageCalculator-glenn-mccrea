@@ -1,11 +1,17 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+import java.util.Scanner;  // Import the Scanner class
+
+class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Enter your age");
+
+        int userAge = myObj.nextInt();  // Read user input
+
+        int ageSolution = (100-userAge);
+
+        System.out.println("It will be " + ageSolution + " years until you are 100 years old.");  // Output user input
+    myObj.close();
     }
 }
